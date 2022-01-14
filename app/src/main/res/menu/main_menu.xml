@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/myGroup">
+
+        <item
+            android:id="@+id/menuItemHelp"
+            android:alphabeticShortcut="h"
+            android:icon="@mipmap/ic_launcher"
+            android:numericShortcut="9"
+            android:title="Help"
+            app:showAsAction="ifRoom" />
+
+        <item android:id="@+id/menuItemInfo"
+            android:title="Info"/>
+    </group>
+
+    <item android:id="@+id/menuItemSettings" android:title="Settings">
+        <menu>
+            <item android:title="Phone Settings" android:id="@+id/menuItemPhone"/>
+            <item android:title="Sys Settings" android:id="@+id/menuItemSys"/>
+        </menu>
+    </item>
+</menu>
